@@ -257,7 +257,13 @@ p {
 .booking {
     width: 40%;
 }
-
+.border{
+    border-bottom: 5px solid #386bce;
+    width: 60px;
+    margin-left: 2rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
 .box-booking {
     border: 1px solid #dddddd;
     border-radius: 5px;
@@ -269,8 +275,6 @@ p {
 .selection h3 {
     padding: 1rem;
     color: #3a3a3a;
-    border-bottom: 6px solid #386bce;
-    width: 20px;
     margin-left: 1rem;
     border-radius: 4px;
 }
@@ -324,10 +328,10 @@ p {
 }
 
 .calendar h3 {
-
+    padding: 1rem;
     color: #3a3a3a;
-    font-size: 1.3rem;
     margin-left: 1rem;
+    border-radius: 4px;
     margin-bottom: 1rem;
 }
 
@@ -369,7 +373,7 @@ ul {
     border: 1px solid #386bce;
     cursor: pointer;
     background-color: #fff;
-    
+
 }
 
 /* Next button */
@@ -422,4 +426,59 @@ ul {
     border-radius: 50%;
     background: #386bce;
     color: white !important
+}
+.small{
+    margin-top: 1rem;
+    font-style: 0.7rem;
+    margin-left: 1rem;
+    color: #666;
+}
+/* Booking summary */
+
+.summary {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.summary h3 {
+    padding: 1rem;
+    color: #3a3a3a;
+    
+    margin-left: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.checkout {
+    padding: 1rem;
+    width: 100%;
+    background-color: #386bce;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Styling the footer */
+
+.footer{
+    background-color: #000;
+    color: #fff;
+    margin-top: 1rem;
+}
+.footer-top{
+    width: 95%;
+    display: flex;
+}
+.footer_contact{
+    width: 50%;
+}
+.footer-logo{
+    width: 40%;
+}
+.footer-logo img{
+    width: 300px;
+    height: 300px;
+}
+.footer_contact{
+    width: 60%;
 }
