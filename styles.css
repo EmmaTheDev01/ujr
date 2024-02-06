@@ -1,30 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'PT Serif', serif;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.top-nav{
+
+.top-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 35px;
     background-color: #ffd400;
 }
-.top-nav li{
-    font-family:'PT Serif', serif;
+
+.top-nav li {
+    font-family: 'PT Serif', serif;
     text-transform: uppercase;
     font-weight: 700;
     padding: 0 1rem;
     list-style-type: none;
     cursor: pointer;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,25 +38,29 @@ body{
     background-color: #000;
     border-bottom: 3px solid #7a68bc;
 }
-.navbar .logo{
+
+.navbar .logo {
     flex: 2;
     font-size: 1.5rem;
     width: 45%;
     margin-left: 1rem;
     color: #fff;
 }
-.navbar .logo img{
-   width: 50%;
-   height: 100%;
+
+.navbar .logo img {
+    width: 50%;
+    height: 100%;
 }
-.navbar .nav-menu{
+
+.navbar .nav-menu {
     flex: 3;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 45%;
 }
-.nav-menu li{
+
+.nav-menu li {
     list-style-type: none;
     font-size: .9rem;
     text-transform: uppercase;
@@ -59,11 +68,13 @@ body{
     color: #fff;
     cursor: pointer;
 }
-.nav-menu li:hover{
-  color: #ffd400;
+
+.nav-menu li:hover {
+    color: #ffd400;
 }
+
 /* STYLING THE IMAGE GRID */
-.image-grid{
+.image-grid {
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -71,33 +82,38 @@ body{
     height: 400px;
     overflow: hidden;
 }
-.first{
-    width: 45%;
+
+.first {
+    width: 48%;
     margin-top: 0.5rem;
 }
-.first img{
+
+.first img {
     width: 100%;
     height: 400px;
     object-fit: cover;
-    
+
 }
-.second{
+
+.second {
     height: auto;
     width: 50%;
-    margin: 0.5em;
+    margin-top: 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.row{
+
+.row {
     width: 300px;
     height: 190px;
     margin: 0.5rem;
     object-fit: cover;
     overflow: hidden;
 }
-.row img{
+
+.row img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -105,30 +121,37 @@ body{
 
 /* Styling the info and booking section */
 
-.info{
+.info {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
-.info_section{
+
+.info_section {
     width: 40%;
     margin: 1rem;
 }
-.info_section h1{
+
+.info_section h1 {
     color: #386bce;
 }
-.info_section .tripadvisor, p{
+
+.info_section .tripadvisor,
+p {
     margin-top: 0.5rem;
     color: #747474;
 }
-.info_section .tabs{
+
+.info_section .tabs {
     margin-top: 1rem;
 }
-.info_section .tabs ul{
+
+.info_section .tabs ul {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
-.info_section .tabs .tab-menu{
+
+.info_section .tabs .tab-menu {
     padding: 1rem;
     list-style-type: none;
     color: #747474;
@@ -137,44 +160,266 @@ body{
     width: 150px;
     border: 1px solid #c4c4c4;
 }
-.info_section .tabs .tab-menu:hover{
+
+.info_section .tabs .tab-menu:hover {
     list-style-type: none;
     color: #386bce;
 }
-.info_section .tabs .active{
+
+.info_section .tabs .active {
     list-style-type: none;
     color: #386bce;
     border-top: 2px solid #386bce;
     border-bottom: none;
     background-color: #fff;
 }
-.text_description{
+
+.text_description {
     padding-top: 1rem;
 }
-.text_description p{
+
+.text_description p {
     font-size: .9rem;
 }
-.text_description .amenities{
+
+.text_description .amenities {
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 }
-.included, .excluded h3{
+
+.included,
+.excluded h3 {
     font-size: 1.3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #3a3a3a;
 }
-.included li{
+
+.included li,
+.cancel li {
     color: #747474;
-    width: 200px;
     font-size: .9rem;
 }
-.excluded li{
+
+.excluded li {
     color: #747474;
     width: 180px;
     font-size: .9rem;
 }
-.booking{
+
+.cancel h3 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #3a3a3a;
+}
+
+/* Styling the categories and box information */
+.box-info {
+    display: flex;
+    justify-content: start;
+    border: 1px solid #ddd;
+    margin-top: 1rem;
+    background-color: #f6f6f6;
+}
+
+.left,
+.right {
+    margin: 1rem;
+    width: 300px;
+}
+
+.left h3,
+.right h3 {
+    color: #3a3a3a;
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+
+}
+
+.right {
+    overflow: hidden;
+}
+
+.right li {
+    display: inline-block;
+    font-weight: 600;
+    color: #369aff;
+    font-size: .8rem;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    border: 1px solid #c2e0ff;
+    background-color: #ebf5ff;
+}
+
+/* Styling the booking side */
+.booking {
     width: 40%;
+}
+
+.box-booking {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-top: 1rem;
+    height: auto;
+    margin: 1rem;
+}
+
+.selection h3 {
+    padding: 1rem;
+    color: #3a3a3a;
+    border-bottom: 6px solid #386bce;
+    width: 20px;
+    margin-left: 1rem;
+    border-radius: 4px;
+}
+
+.number {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1rem;
+}
+
+.number .title {
+    padding: 1rem;
+    width: 230px;
+}
+
+.number .number_choose {
+    padding: 1rem;
+    width: 200px;
+}
+
+.title div,
+.number_choose div {
+    padding: .5rem;
+}
+
+.number_choose .minus {
+    padding: .5rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    background-color: #fff;
+    color: #386bce;
+    border: 1px solid #386bce;
+    cursor: pointer;
+}
+
+.number_choose .plus {
+    padding: .5rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+    background-color: #fff;
+    color: #386bce;
+    border: 1px solid #386bce;
+    cursor: pointer;
+}
+
+.calendar {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.calendar h3 {
+
+    color: #3a3a3a;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Calendar css */
+
+ul {
+    list-style-type: none;
+}
+
+/* Month header */
+.month {
+    padding: 10px 25px;
+    width: 95%;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: #3a3a3a;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+    color: #386bce;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 35px;
+    border: 1px solid #386bce;
+    cursor: pointer;
+    background-color: #fff;
+    
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+    color: #386bce;
+    padding: .5rem;
+    border-radius: 50%;
+    width: 35px;
+    border: 1px solid #386bce;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 10px;
+    border-radius: 50%;
+    background: #386bce;
+    color: white !important
 }
